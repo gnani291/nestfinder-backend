@@ -40,5 +40,4 @@ async function getSaved(req, res) {
     res.status(500).json({ error: "Failed to fetch saved listings" });
   }
 }
-
 module.exports = { saveListing, unsaveListing, getSaved };
