@@ -1,6 +1,6 @@
 const { pool } = require("../db");
 
-// GET /chat/conversations - get all conversations for user
+/GET /chat/conversations - get all conversations for user
 async function getConversations(req, res) {
   try {
     const result = await pool.query(`
