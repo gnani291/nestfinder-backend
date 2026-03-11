@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: nestfinder-api
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false
+      - key: FIREBASE_PROJECT_ID
+        value: nestfinder-59d68
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
