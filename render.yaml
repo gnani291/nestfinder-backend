@@ -1,5 +1,4 @@
 services:
-
   - type: web
     name: nestfinder-api
     runtime: node
