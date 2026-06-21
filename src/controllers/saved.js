@@ -1,5 +1,6 @@
 const { pool } = require("../db");
 
+
 // POST /saved/:listingId - save a listing
 async function saveListing(req, res) {
   try {
