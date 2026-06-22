@@ -1,6 +1,5 @@
 const { pool } = require("../db");
 
-
 // GET /listings - fetch with filters
 async function getListings(req, res) {
   try {
