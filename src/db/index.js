@@ -5,7 +5,6 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false },
 });
 
-
 async function initDB() {
   const client = await pool.connect();
   try {
