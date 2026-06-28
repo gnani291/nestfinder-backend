@@ -1,5 +1,4 @@
 const admin = require("firebase-admin");
-
 // Initialize Firebase Admin (no service account needed - uses project ID)
 if (!admin.apps.length) {
   admin.initializeApp({
