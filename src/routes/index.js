@@ -4,6 +4,7 @@ const { authenticate, optionalAuth } = require("../middleware/auth");
 const listings = require("../controllers/listings");
 const saved = require("../controllers/saved");
 const chat = require("../controllers/chat");
+
 // ── Listings ──────────────────────────────────────────
 router.get("/listings",          optionalAuth, listings.getListings);
 router.get("/listings/my",       authenticate, listings.getMyListings);
