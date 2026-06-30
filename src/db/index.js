@@ -7,7 +7,8 @@ const pool = new Pool({
 async function initDB() {
   const client = await pool.connect();
   try {
-    // Users table (mirrors Firebase, stores extra data)
+   
+// Users table (mirrors Firebase, stores extra data)
     await client.query(`
       CREATE TABLE IF NOT EXISTS users (
         id SERIAL PRIMARY KEY,
